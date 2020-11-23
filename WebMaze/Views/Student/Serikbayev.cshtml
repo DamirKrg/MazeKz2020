@@ -1,0 +1,22 @@
+﻿@model List<ClanUchiha>
+
+<div class = "uchiha-Clan">
+<p class ="favorite-person"> Известные представители клана Учиха</p>
+<div class = "contaiter-uchiha">
+@foreach(var uchiha in Model)
+{
+	<div class = "uchiha">
+		<div class = "uchiha-name">
+			@uchiha.Name  Age: @uchiha.Age
+		</div>
+			@if(uchiha != null)
+			{
+				<div>
+					<img class = "uchiha-img" src="@uchiha.Url">
+				</div>
+			}
+		
+	</div>
+}
+</div>
+</div>

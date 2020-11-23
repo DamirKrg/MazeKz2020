@@ -413,6 +413,49 @@ namespace WebMaze.Controllers
             return View(models);
         }
 
+        public IActionResult Serikbayev()
+        {
+            var models = new List<ClanUchiha>();
+
+            var uchihaMadara = new ClanUchiha();
+            uchihaMadara.Name = "Madara";
+            uchihaMadara.Age = 34;
+            uchihaMadara.Url = "https://wiki.jcdn.ru/w/images/a/a3/UchihaMadaraAnime.jpg";
+            models.Add(uchihaMadara);
+
+            var uchihaItachi = new ClanUchiha();
+            uchihaItachi.Name = "Itachi";
+            uchihaItachi.Age = 21;
+            uchihaItachi.Url = "https://wiki.jcdn.ru/w/images/d/d6/Itachi.jpg";
+            models.Add(uchihaItachi);
+
+            var uchihaShisui = new ClanUchiha();
+            uchihaShisui.Name = "Shisui";
+            uchihaShisui.Age = 19;
+            uchihaShisui.Url = "https://wiki.jcdn.ru/w/images/a/a7/Shisui_i_voron.jpg";
+            models.Add(uchihaShisui);
+
+            var uchihaSasuke = new ClanUchiha();
+            uchihaSasuke.Name = "Saske";
+            uchihaSasuke.Age = 17;
+            uchihaSasuke.Url = "https://wiki.jcdn.ru/w/images/b/b0/SasukeTheLastFilm.jpg";
+            models.Add(uchihaSasuke);
+
+            var uchihaObito = new ClanUchiha();
+            uchihaObito.Name = "Obito";
+            uchihaObito.Age = 31;
+            uchihaObito.Url = "https://wiki.jcdn.ru/w/images/7/72/UchihaObitoAnime.jpg";
+            models.Add(uchihaObito);
+
+            var uchihaFugaku = new ClanUchiha();
+            uchihaFugaku.Name = "Fugaku";
+            uchihaFugaku.Age = 40;
+            uchihaFugaku.Url = "https://wiki.jcdn.ru/w/images/f/f2/Fugaku.png";
+            models.Add(uchihaFugaku);
+
+            return View(models);
+        }
+
         public IActionResult Proshutin()
         {
             var countries = new List<CountryViewModel>();
